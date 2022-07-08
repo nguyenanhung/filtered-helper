@@ -32,7 +32,7 @@ class Filter
      * @time  : 2018-12-18 22:37
      *
      */
-    public static function filterInputDataIsArray($inputData = array(), $requireData = array())
+    public static function filterInputDataIsArray(array $inputData = array(), array $requireData = array()): bool
     {
         if (empty($inputData) || empty($requireData)) {
             return false;
@@ -63,7 +63,7 @@ class Filter
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 2/11/20 22:06
      */
-    public static function filterRequireInputDataIsNull($inputData = array(), $requireData = array())
+    public static function filterRequireInputDataIsNull(array $inputData = array(), array $requireData = array()): bool
     {
         if (empty($inputData) || empty($requireData)) {
             return false;
@@ -98,7 +98,7 @@ class Filter
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 2/11/20 22:28
      */
-    public static function filterRequireInputDataIsEmpty($inputData = array(), $requireData = array())
+    public static function filterRequireInputDataIsEmpty(array $inputData = array(), array $requireData = array()): bool
     {
         if (empty($inputData) || empty($requireData)) {
             return false;
@@ -132,7 +132,7 @@ class Filter
      * @time  : 2019-07-11 10:27
      *
      */
-    public static function filterInputDataIsNull($inputData = array())
+    public static function filterInputDataIsNull(array $inputData = array()): bool
     {
         foreach ($inputData as $item) {
             if ($item === null) {
@@ -153,7 +153,7 @@ class Filter
      * @time  : 2018-12-18 23:39
      *
      */
-    public static function filterDate($inputDate = '')
+    public static function filterDate(string $inputDate = ''): array
     {
         return DateAndTime::filterDate($inputDate);
     }

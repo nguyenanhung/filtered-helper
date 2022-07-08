@@ -1,10 +1,6 @@
 # CHANGELOG
 
-## [1.0.0] - 2022/07/08
-
-### Added
-
-- [x] Init Project
+See full changelog: https://github.com/nguyenanhung/filtered-helper/releases
 
 ## Contact & Support
 
