@@ -20,8 +20,8 @@
         }
     ],
     "require": {
-        "php": ">=5.6",
-        "nguyenanhung/date-helper": "^1.0"
+        "php": ">=7.0",
+        "nguyenanhung/date-helper": "^2.0 || ^1.0"
     },
     "autoload": {
         "psr-4": {
